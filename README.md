@@ -1,11 +1,11 @@
-### Redshift Performance Optimisation and Examples: 
-Redshift's columnar storage is different from traditional RDBMS systems. We had to fine-tune our table designs, distribution styles, and sort keys to ensure optimal performance. This required several iterations and performance benchmarking.
+### Redshift Performance Optimisation with an example: 
+Redshift's columnar storage is different from traditional RDBMS systems. We had to fine-tune our table designs, distribution styles, and sort keys to ensure optimal performance. This required several iterations and performance benchmarking on our recent migration project.
 
-I can explain with a simple example on the challenges we faced in migrating a huge transaction table from onprem RDBMS to Redshift.  This Transaction table was heavily accessed and was growing rapidly, given the nature of our business.
+I can explain this with a simple example on the challenges we faced in migrating a huge transaction table from onprem RDBMS to Redshift.  This Transaction table was heavily accessed and was growing rapidly, given the nature of our business.
 
 Original Structure (On-Premises RDBMS):
 
-<mark>(Have your own fields here applicable for your project)</mark>
+> (Have your own fields here applicable for your project)
 TransactionID (Primary Key)
 AccountNumber
 TransactionDate
