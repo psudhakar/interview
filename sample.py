@@ -1,7 +1,7 @@
 import re
 
 def extract_table_aliases(sql_query):
-    regex = r"FROM\s+(?:(?:\w+\.)?(\w+)\s+)?AS?\s+(\w+)?"
+    regex = r"FROM\s+(?:(?:\w+\.)?(\w+)(?:\s+|\t+)(\w+)?)|(?:(\w+))?"
     table_aliases = {}
     for match in re.finditer(regex, sql_query, flags=re.IGNORECASE):
         table_name = match.group(1) or match.group(2)  # Use either captured group
